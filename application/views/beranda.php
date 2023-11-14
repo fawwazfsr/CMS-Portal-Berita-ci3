@@ -1,506 +1,599 @@
 <!DOCTYPE html>
-
-<!--
- // WEBSITE: https://themefisher.com
- // TWITTER: https://twitter.com/themefisher
- // FACEBOOK: https://www.facebook.com/themefisher
- // GITHUB: https://github.com/themefisher/
--->
-
 <html lang="en">
 
 <head>
-	<meta charset="utf-8">
-	<title>NewsBit - News Magazine Newspaper HTML Template</title>
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-	<!-- theme meta -->
-	<meta name="theme-name" content="newsbit" />
-
-	<!--Favicon-->
-	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-	<link rel="icon" href="images/favicon.ico" type="image/x-icon">
-	<link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
-
-	<!-- THEME CSS
-	================================================== -->
-	<!-- Bootstrap -->
-	<link rel="stylesheet" href="<?= base_url('assets/newsbit/theme/') ?>plugins/bootstrap/css/bootstrap.min.css">
-	<!-- FontAwesome -->
-	<link rel="stylesheet" href="<?= base_url('assets/newsbit/theme/') ?>plugins/font-awesome/css/font-awesome.min.css">
-	<!-- Slick Carousel -->
-	<link rel="stylesheet" href="<?= base_url('assets/newsbit/theme/') ?>plugins/slick-carousel/slick.css">
-	<link rel="stylesheet" href="<?= base_url('assets/newsbit/theme/') ?>plugins/slick-carousel/slick-theme.css">
-	<!-- manin stylesheet -->
-	<link rel="stylesheet" href="<?= base_url('assets/newsbit/theme/') ?>css/style.css">
+	<title>Home</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--===============================================================================================-->
+	<link rel="icon" type="image/png" href="<?= base_url('assets/magnews/') ?>images/icons/favicon.png" />
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="<?= base_url('assets/magnews/') ?>vendor/bootstrap/css/bootstrap.min.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="<?= base_url('assets/magnews/') ?>fonts/fontawesome-5.0.8/css/fontawesome-all.min.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="<?= base_url('assets/magnews/') ?>fonts/iconic/css/material-design-iconic-font.min.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="<?= base_url('assets/magnews/') ?>vendor/animate/animate.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="<?= base_url('assets/magnews/') ?>vendor/css-hamburgers/hamburgers.min.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="<?= base_url('assets/magnews/') ?>vendor/animsition/css/animsition.min.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="<?= base_url('assets/magnews/') ?>css/util.min.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="<?= base_url('assets/magnews/') ?>css/main.css">
+	<!--===============================================================================================-->
 </head>
 
-<body>
+<body class="animsition">
 
-	<div class="trending-bar-dark hidden-xs ">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-6">
-					<h3 class="trending-bar-title">Trending News</h3>
-					<div class="trending-news-slider">
-						<div class="item">
-							<div class="post-content">
-								<h2 class="post-title title-sm">
-									<a href="single-post.html">Ex-Googler warns coding bootcamps are lacking</a>
-								</h2>
-							</div>
-						</div>
-						<div class="item">
-							<div class="post-content">
-								<h2 class="post-title title-sm">
-									<a href="single-post.html">Intel’s new smart glasses actually look good</a>
-								</h2>
-							</div>
-						</div>
-						<div class="item">
-							<div class="post-content">
-								<h2 class="post-title title-sm">
-									<a href="single-post.html">Here's How To Get Free Pizza On 2 hour</a>
-								</h2>
-							</div>
-						</div>
-					</div>
-				</div>
+	<!-- Header -->
+	<header>
+		<!-- Header desktop -->
+		<div class="container-menu-desktop">
+			<div class="topbar">
+				<div class="content-topbar container h-100">
+					<div class="left-topbar">
+						<span class="left-topbar-item flex-wr-s-c">
+							<span>
+								New York, NY
+							</span>
 
+							<img class="m-b-1 m-rl-8" src="<?= base_url('assets/magnews/') ?>images/icons/icon-night.png" alt="IMG">
 
-				<div class="col-md-12 col-sm-12 col-xs-12 top-nav-social-lists text-lg-right col-lg-4 ml-lg-auto">
-					<ul class="list-unstyled mt-4 mt-lg-0">
-						<li>
-							<a href="#">
-								<span class="social-icon">
-									<i class="fa fa-facebook-f"></i>
-								</span>
-							</a>
-							<a href="#">
-								<span class="social-icon">
-									<i class="fa fa-twitter"></i>
-								</span>
-							</a>
-							<a href="#">
-								<span class="social-icon">
-									<i class="fa fa-google-plus"></i>
-								</span>
-							</a>
-							<a href="#">
-								<span class="social-icon">
-									<i class="fa fa-youtube"></i>
-								</span>
-							</a>
-							<a href="#">
-								<span class="social-icon">
-									<i class="fa fa-linkedin"></i>
-								</span>
-							</a>
-							<a href="#">
-								<span class="social-icon">
-									<i class="fa fa-pinterest-p"></i>
-								</span>
-							</a>
-							<a href="#">
-								<span class="social-icon">
-									<i class="fa fa-rss"></i>
-								</span>
-							</a>
-							<a href="#">
-								<span class="social-icon">
-									<i class="fa fa-github"></i>
-								</span>
-							</a>
-							<a href="#">
-								<span class="social-icon">
-									<i class="fa fa-reddit-alien"></i>
-								</span>
-							</a>
-						</li>
-					</ul>
-				</div>
+							<span>
+								HI 58° LO 56°
+							</span>
+						</span>
 
-			</div>
-		</div>
-	</div>
+						<a href="#" class="left-topbar-item">
+							About
+						</a>
 
-	<header class="header-navigation d-none d-lg-block">
-		<div class="container">
-			<div class="row align-items-center">
-				<div class="col-xs-12 col-sm-3 col-md-3">
-					<!-- Logo -->
-					<div class="logo">
-						<a href="index.html">
-							<img src="images/logos/logo.png" alt=""> <!-- Replace Logo Here -->
+						<a href="#" class="left-topbar-item">
+							Contact
+						</a>
+
+						<a href="#" class="left-topbar-item">
+							Sing up
+						</a>
+
+						<a href="#" class="left-topbar-item">
+							Log in
 						</a>
 					</div>
-					<!-- End Logo -->
-				</div>
-				<div class="col-xs-12 col-sm-9 col-md-9">
-					<div class="top-ad-banner float-right">
+
+					<div class="right-topbar">
 						<a href="#">
-							<img src="images/news/ad-pro.png" class="img-fluid" alt="banner-ads">
+							<span class="fab fa-facebook-f"></span>
+						</a>
+
+						<a href="#">
+							<span class="fab fa-twitter"></span>
+						</a>
+
+						<a href="#">
+							<span class="fab fa-pinterest-p"></span>
+						</a>
+
+						<a href="#">
+							<span class="fab fa-vimeo-v"></span>
+						</a>
+
+						<a href="#">
+							<span class="fab fa-youtube"></span>
 						</a>
 					</div>
+				</div>
+			</div>
+
+			<!-- Header Mobile -->
+
+			<!-- Menu Mobile -->
+			<div class="menu-mobile">
+				<ul class="topbar-mobile">
+					<li class="left-topbar">
+						<span class="left-topbar-item flex-wr-s-c">
+							<span>
+								New York, NY
+							</span>
+
+							<img class="m-b-1 m-rl-8" src="<?= base_url('assets/magnews/') ?>images/icons/icon-night.png" alt="IMG">
+
+							<span>
+								HI 58° LO 56°
+							</span>
+						</span>
+					</li>
+
+					<li class="left-topbar">
+						<a href="#" class="left-topbar-item">
+							About
+						</a>
+
+						<a href="#" class="left-topbar-item">
+							Contact
+						</a>
+
+						<a href="#" class="left-topbar-item">
+							Sing up
+						</a>
+
+						<a href="#" class="left-topbar-item">
+							Log in
+						</a>
+					</li>
+
+					<li class="right-topbar">
+						<a href="#">
+							<span class="fab fa-facebook-f"></span>
+						</a>
+
+						<a href="#">
+							<span class="fab fa-twitter"></span>
+						</a>
+
+						<a href="#">
+							<span class="fab fa-pinterest-p"></span>
+						</a>
+
+						<a href="#">
+							<span class="fab fa-vimeo-v"></span>
+						</a>
+
+						<a href="#">
+							<span class="fab fa-youtube"></span>
+						</a>
+					</li>
+				</ul>
+			</div>
+
+			<!--  -->
+			<div class="wrap-logo no-banner container">
+				<!-- Logo desktop -->
+				<div class="logo">
+					<a href="index.html"><img src="<?= base_url('assets/magnews/') ?>images/icons/logo-01.png" alt="LOGO"></a>
+				</div>
+			</div>
+
+			<!--  -->
+			<div class="wrap-main-nav">
+				<div class="main-nav">
+					<!-- Menu desktop -->
+					<nav class="menu-desktop">
+						<a class="logo-stick" href="index.html">
+							<img src="<?= base_url('assets/magnews/') ?>images/icons/logo-01.png" alt="LOGO">
+						</a>
+
+						<ul class="main-menu justify-content-center">
+							<li class="main-menu-active">
+								<a href="<?= base_url()?>">Home</a>
+							</li>
+							<?php foreach ($kategori as $kate) { ?>
+								<li class="mega-menu-item">
+									<a href="<?= base_url('home/kategori/' . $kate['id_kategori']) ?>"><?= $kate['nama_kategori'] ?></a>
+								</li>
+							<?php } ?>
+						</ul>
+					</nav>
 				</div>
 			</div>
 		</div>
 	</header>
 
-	<div class="main-navbar clearfix bg-dark ">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-12">
-					<nav class="navbar navbar-expand-lg site-main-nav navigation">
-						<a class="navbar-brand d-lg-none" href="index.html">
-							<img src="images/logos/footer-logo.png" alt="">
-						</a>
+	<!-- Headline -->
+	<div class="container">
+		<div class="bg0 flex-wr-sb-c p-rl-20 p-tb-8">
+			<div class="f2-s-1 p-r-30 size-w-0 m-tb-6 flex-wr-s-c">
+				<span class="text-uppercase cl2 p-r-8">
+					Trending Now:
+				</span>
 
-						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-							<span class="fa fa-bars"></span>
-						</button>
-
-						<div class="collapse navbar-collapse" id="navbarSupportedContent">
-							<ul class="navbar-nav mr-auto">
-
-								<li class="nav-item">
-									<a class="nav-link" href="<?= base_url() ?>" role="button" aria-haspopup="true" aria-expanded="false">
-										Home
-									</a>
-								</li>
-								<?php foreach ($kategori as $kate) { ?>
-									<li class="nav-item">
-										<a class="nav-link" href="<?= base_url('home/kategori/' . $kate['id_kategori']) ?>" role="button" aria-haspopup="true" aria-expanded="false">
-											<?= $kate['nama_kategori'] ?>
-										</a>
-									</li>
-								<?php } ?>
-							</ul>
-							<div class="nav-search ml-auto d-none d-lg-block">
-								<span id="search">
-									<i class="fa fa-search"></i>
-								</span>
-							</div>
-						</div>
-					</nav>
-
-				</div>
-			</div>
-		</div>
-		<form class="site-search" method="get">
-			<input type="text" id="searchInput" name="site_search" placeholder="Enter Keyword Here..." autofocus="">
-			<div class="search-close">
-				<span class="close-search">
-					<i class="fa fa-times"></i>
+				<span class="dis-inline-block cl6 slide100-txt pos-relative size-w-0" data-in="fadeInDown" data-out="fadeOutDown">
+					<span class="dis-inline-block slide100-txt-item animated visible-false">
+						Interest rate angst trips up US equity bull market
+					</span>
 				</span>
 			</div>
-		</form>
+
+			<div class="pos-relative size-a-2 bo-1-rad-22 of-hidden bocl11 m-tb-6">
+				<input class="f1-s-1 cl6 plh9 s-full p-l-25 p-r-45" type="text" name="search" placeholder="Search">
+				<button class="flex-c-c size-a-1 ab-t-r fs-20 cl2 hov-cl10 trans-03">
+					<i class="zmdi zmdi-search"></i>
+				</button>
+			</div>
+		</div>
 	</div>
 
-	<div class="py-30"></div>
-
-	<section class="featured-posts">
+	<!-- Feature post -->
+	<section class="bg0">
 		<div class="container">
-			<div class="row no-gutters">
-				<div class="col-md-6 col-xs-12 col-lg-4">
-					<div class="featured-slider mr-md-3 mr-lg-3">
-						<div class="item" style="background-image:url(images/news/img-1.jpg)">
-							<div class="post-content">
-								<a href="#" class="post-cat bg-primary">Entertainment</a>
-								<h2 class="slider-post-title">
-									<a href="single-post.html">Here's How To Get Free Pizza On</a>
-								</h2>
-								<div class="post-meta mt-2">
-									<span class="posted-time"><i class="fa fa-clock-o mr-2 text-danger"></i>19 hours ago</span>
-									<span class="post-author">
-										by
-										<a href="author.html">Rodinho Summon</a>
-									</span>
-								</div>
-							</div>
+			<div class="row m-rl--1">
+				<div class="col-sm-6 col-lg-4 p-rl-1 p-b-2">
+					<div class="bg-img1 size-a-12 how1 pos-relative" style="background-image: url(images/post-28.jpg);">
+						<a href="blog-detail-01.html" class="dis-block how1-child1 trans-03"></a>
+
+						<div class="flex-col-e-s s-full p-rl-25 p-tb-11">
+							<a href="#" class="dis-block how1-child2 f1-s-2 cl0 bo-all-1 bocl0 hov-btn1 trans-03 p-rl-5 p-t-2">
+								Life Style
+							</a>
+
+							<h3 class="how1-child2 m-t-10">
+								<a href="blog-detail-01.html" class="f1-m-1 cl0 hov-cl10 trans-03">
+									Microsoft quisque at ipsum vel orci eleifend ultrices
+								</a>
+							</h3>
 						</div>
 					</div>
 				</div>
-
-
 			</div>
 		</div>
 	</section>
 
-
-	<section class="block-wrapper">
+	<!-- Post -->
+	<section class="bg0 p-t-70">
 		<div class="container">
-			<div class="row">
+			<div class="row justify-content-center">
 				<?php foreach ($kategori as $kt) { ?>
-					<div class="col-lg-8 col-md-12 col-sm-12 col-xs-12">
-						<div class="news-style-one">
-							<h3 class="news-title">
-								<span><?= $kt['nama_kategori'] ?></span>
-							</h3>
-							<div class="news-style-one-slide">
-								<?php
-								$this->db->from('konten')->where('id_kategori', $kt['id_kategori']);
-								$this->db->limit(4);
-								$konten = $this->db->get()->result_array();
-								?>
-								<?php foreach ($konten as $kk) { ?>
-								<div class="item">
-									<div class="post-block-wrapper clearfix  mb-5">
-										<div class="post-thumbnail">
-											<a href="single-post.htm">
-												<img class="img-fluid" src="<?= base_url('assets/upload/konten/' . $kk['foto']) ?>" alt="post-thumbnail" />
-											</a>
-										</div>
-										<div class="post-content">
-											<h2 class="post-title">
-												<a href="single-post.html">PS4 Games Sale: All The PSN Deals</a>
-											</h2>
-											<div class="post-meta mb-2">
-												<span class="posted-time"><i class="fa fa-clock-o mr-2"></i>5 hours ago</span>
-												<span class="post-author">
-													by
-													<a href="author.html">Tarnak Sunder</a>
-												</span>
-											</div>
-											<p>Suscipit beatae facilis doloribus aliquam sed expedita accusantium itaque assumenda laborum facere aliquid Reiciendis.</p>
-										</div>
-									</div>
-								</div>
-								<?php } ?>
+					<div class="col-md-10 col-lg-8">
+						<div class="p-b-20">
+							<!-- Entertainment  -->
+							<div class="p-b-20">
+								<div class="how2 how2-cl1 flex-sb-c m-r-10 m-r-0-sr991">
+									<h3 class="f1-m-2 cl12 tab01-title">
+										<?= $kt['nama_kategori'] ?>
+									</h3>
 
+
+									<a href="category-01.html" class="tab01-link f1-s-1 cl9 hov-cl10 trans-03">
+										View all
+										<i class="fs-12 m-l-5 fa fa-caret-right"></i>
+									</a>
+								</div>
+
+								<div class="row p-t-35">
+									<?php
+									$this->db->from('konten')
+										->where('id_kategori', $kt['id_kategori']);
+									$this->db->limit(4);
+									$konten = $this->db->get()->result_array();
+									?>
+									<?php foreach ($konten as $kk) { ?>
+										<div class="col-sm-6 p-r-25 p-r-15-sr991">
+											<!-- Item post -->
+											<div class="m-b-30">
+												<a href="#" class="wrap-pic-w hov1 trans-03">
+													<img src="<?= base_url('assets/upload/konten/' . $kk['foto']) ?>" alt="IMGDonec metus orci, malesuada et lectus vitae">
+												</a>
+												<div class="p-t-20">
+													<h5 class="p-b-5">
+														<a href="blog-detail-01.html" class="f1-s-5 cl3 hov-cl10 trans-03">
+															<?= $kk['judul'] ?>
+														</a>
+													</h5>
+
+													<span class="cl8">
+														<span class="f1-s-3">
+															<?= $kk['tanggal'] ?>
+														</span>
+													</span>
+												</div>
+											</div>
+										</div>
+									<?php } ?>
+								</div>
 							</div>
 						</div>
-						<div class="py-40"></div>
-
-
 					</div>
 				<?php } ?>
+			</div>
 
-				<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
-					<div class="sidebar">
-						<div class="widget">
-							<h3 class="news-title">
-								<span>Stay in touch</span>
+		</div>
+	</section>
+
+	<!-- Banner -->
+	<div class="container m-b-15">
+		<div class="flex-c-c">
+			<a href="#">
+				<img class="max-w-full" src="images/banner-01.jpg" alt="IMG">
+			</a>
+		</div>
+	</div>
+
+	<!-- Latest -->
+	<section class="bg0 p-t-50 p-b-90">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-md-10 col-lg-8 p-b-50">
+					<div class="p-r-10 p-r-0-sr991">
+						<div class="how2 how2-cl4 flex-s-c">
+							<h3 class="f1-m-2 cl3 tab01-title">
+								Latest Articles
 							</h3>
-
-							<ul class="list-inline social-widget">
-								<li class="list-inline-item">
-									<a class="social-page youtube" href="#">
-										<i class="fa fa-play"></i>
-									</a>
-								</li>
-								<li class="list-inline-item">
-									<a class="social-page facebook" href="#">
-										<i class="fa fa-facebook"></i>
-									</a>
-								</li>
-								<li class="list-inline-item">
-									<a class="social-page twitter" href="#">
-										<i class="fa fa-twitter"></i>
-									</a>
-								</li>
-								<li class="list-inline-item">
-									<a class="social-page pinterest" href="#">
-										<i class="fa fa-pinterest"></i>
-									</a>
-								</li>
-								<li class="list-inline-item">
-									<a class="social-page linkedin" href="#">
-										<i class="fa fa-linkedin"></i>
-									</a>
-								</li>
-
-								<li class="list-inline-item">
-									<a class="social-page youtube" href="#">
-										<i class="fa fa-youtube"></i>
-									</a>
-								</li>
-
-							</ul>
-
 						</div>
-						<div class="widget">
-							<h3 class="news-title">
-								<span>Hot News</span>
-							</h3>
 
-							<div class="post-overlay-wrapper">
-								<div class="post-thumbnail">
-									<img class="img-fluid" src="images/news/news-15.jpg" alt="post-thumbnail" />
-								</div>
-								<div class="post-content">
-									<a class="post-category white" href="post-category-1.html">Fashion</a>
-									<h2 class="post-title">
-										<a href="single-post.html">First Look At Self-Portrait's Autumn Collection...</a>
-									</h2>
-									<div class="post-meta white">
-										<span class="posted-time"><i class="fa fa-clock-o mr-1"></i>17 jun,2019</span>
-										<span> by </span>
-										<span class="post-author">
-											<a href="author.html">Jammy Anderson</a>
+						<div class="p-b-40">
+							<!-- Item post -->
+							<div class="flex-wr-sb-s p-t-40 p-b-15 how-bor2">
+								<a href="blog-detail-01.html" class="size-w-8 wrap-pic-w hov1 trans-03 w-full-sr575 m-b-25">
+									<img src="images/post-43.jpg" alt="IMG">
+								</a>
+
+								<div class="size-w-9 w-full-sr575 m-b-25">
+									<h5 class="p-b-12">
+										<a href="blog-detail-01.html" class="f1-l-1 cl2 hov-cl10 trans-03 respon2">
+											Robot lorem ipsum dolor sit amet consectetur
+										</a>
+									</h5>
+
+									<div class="cl8 p-b-18">
+										<a href="#" class="f1-s-4 cl8 hov-cl10 trans-03">
+											by John Alvarado
+										</a>
+
+										<span class="f1-s-3 m-rl-3">
+											-
+										</span>
+
+										<span class="f1-s-3">
+											Feb 18
 										</span>
 									</div>
+
+									<p class="f1-s-1 cl6 p-b-24">
+										Duis eu felis id tortor congue consequat. Sed vitae vestibulum enim, et pharetra magna
+									</p>
+
+									<a href="blog-detail-01.html" class="f1-s-1 cl9 hov-cl10 trans-03">
+										Read More
+										<i class="m-l-2 fa fa-long-arrow-alt-right"></i>
+									</a>
 								</div>
 							</div>
-							<div class="post-list-block">
-								<div class="post-block-wrapper post-float ">
-									<div class="post-thumbnail">
-										<a href="single-post.html">
-											<img class="img-fluid" src="images/news/news-03.jpg" alt="post-thumbnail" />
+
+							<!-- Item post -->
+							<div class="flex-wr-sb-s p-t-40 p-b-15 how-bor2">
+								<a href="blog-detail-01.html" class="size-w-8 wrap-pic-w hov1 trans-03 w-full-sr575 m-b-25">
+									<img src="images/post-44.jpg" alt="IMG">
+								</a>
+
+								<div class="size-w-9 w-full-sr575 m-b-25">
+									<h5 class="p-b-12">
+										<a href="blog-detail-01.html" class="f1-l-1 cl2 hov-cl10 trans-03 respon2">
+											Health lorem ipsum dolor sit amet consectetur
 										</a>
-									</div>
-									<div class="post-content">
-										<h2 class="post-title title-sm">
-											<a href="single-post.html">Apple HomePod review: locked in</a>
-										</h2>
-										<div class="post-meta">
-											<span class="posted-time"><i class="fa fa-clock-o mr-1"></i>2 hours ago</span>
-										</div>
-									</div>
-								</div>
-								<div class="post-block-wrapper post-float">
-									<div class="post-thumbnail">
-										<a href="single-post.html">
-											<img class="img-fluid" src="images/news/news-05.jpg" alt="post-thumbnail" />
+									</h5>
+
+									<div class="cl8 p-b-18">
+										<a href="#" class="f1-s-4 cl8 hov-cl10 trans-03">
+											by John Alvarado
 										</a>
-									</div>
-									<div class="post-content">
-										<h2 class="post-title title-sm">
-											<a href="single-post.html">Intel’s new smart glasses actually look good</a>
-										</h2>
-										<div class="post-meta">
-											<span class="posted-time"><i class="fa fa-clock-o mr-1"></i> 15 March , 2019</span>
-										</div>
-									</div>
-								</div>
-								<div class="post-block-wrapper post-float">
-									<div class="post-thumbnail">
-										<a href="single-post.html">
-											<img class="img-fluid" src="images/news/news-11.jpg" alt="post-thumbnail" />
-										</a>
+
+										<span class="f1-s-3 m-rl-3">
+											-
+										</span>
+
+										<span class="f1-s-3">
+											Feb 18
+										</span>
 									</div>
 
-									<div class="post-content">
-										<h2 class="post-title title-sm">
-											<a href="single-post.html">Free Two-Hour Delivery From Whole Foods</a>
-										</h2>
-										<div class="post-meta">
-											<span class="posted-time"><i class="fa fa-clock-o mr-1"></i> 5 hours ago</span>
-										</div>
-									</div>
+									<p class="f1-s-1 cl6 p-b-24">
+										Duis eu felis id tortor congue consequat. Sed vitae vestibulum enim, et pharetra magna
+									</p>
+
+									<a href="blog-detail-01.html" class="f1-s-1 cl9 hov-cl10 trans-03">
+										Read More
+										<i class="m-l-2 fa fa-long-arrow-alt-right"></i>
+									</a>
 								</div>
-								<div class="post-block-wrapper post-float">
-									<div class="post-thumbnail">
-										<a href="single-post.html">
-											<img class="img-fluid" src="images/news/news-06.jpg" alt="post-thumbnail" />
+							</div>
+
+							<!-- Item post -->
+							<div class="flex-wr-sb-s p-t-40 p-b-15 how-bor2">
+								<a href="blog-detail-01.html" class="size-w-8 wrap-pic-w hov1 trans-03 w-full-sr575 m-b-25">
+									<img src="images/post-45.jpg" alt="IMG">
+								</a>
+
+								<div class="size-w-9 w-full-sr575 m-b-25">
+									<h5 class="p-b-12">
+										<a href="blog-detail-01.html" class="f1-l-1 cl2 hov-cl10 trans-03 respon2">
+											Success lorem ipsum dolor sit amet consectetur
 										</a>
+									</h5>
+
+									<div class="cl8 p-b-18">
+										<a href="#" class="f1-s-4 cl8 hov-cl10 trans-03">
+											by John Alvarado
+										</a>
+
+										<span class="f1-s-3 m-rl-3">
+											-
+										</span>
+
+										<span class="f1-s-3">
+											Feb 18
+										</span>
 									</div>
 
-									<div class="post-content">
-										<h2 class="post-title title-sm">
-											<a href="single-post.html">Here's How To Get Free Pizza On</a>
-										</h2>
-										<div class="post-meta">
-											<span class="posted-time"><i class="fa fa-clock-o mr-1"></i> 17 June, 2019</span>
-										</div>
+									<p class="f1-s-1 cl6 p-b-24">
+										Duis eu felis id tortor congue consequat. Sed vitae vestibulum enim, et pharetra magna
+									</p>
+
+									<a href="blog-detail-01.html" class="f1-s-1 cl9 hov-cl10 trans-03">
+										Read More
+										<i class="m-l-2 fa fa-long-arrow-alt-right"></i>
+									</a>
+								</div>
+							</div>
+
+							<!-- Item post -->
+							<div class="flex-wr-sb-s p-t-40 p-b-15 how-bor2">
+								<a href="blog-detail-01.html" class="size-w-8 wrap-pic-w hov1 trans-03 w-full-sr575 m-b-25">
+									<img src="images/post-46.jpg" alt="IMG">
+								</a>
+
+								<div class="size-w-9 w-full-sr575 m-b-25">
+									<h5 class="p-b-12">
+										<a href="blog-detail-01.html" class="f1-l-1 cl2 hov-cl10 trans-03 respon2">
+											Bitcon lorem ipsum dolor sit amet consectetur
+										</a>
+									</h5>
+
+									<div class="cl8 p-b-18">
+										<a href="#" class="f1-s-4 cl8 hov-cl10 trans-03">
+											by John Alvarado
+										</a>
+
+										<span class="f1-s-3 m-rl-3">
+											-
+										</span>
+
+										<span class="f1-s-3">
+											Feb 18
+										</span>
 									</div>
+
+									<p class="f1-s-1 cl6 p-b-24">
+										Duis eu felis id tortor congue consequat. Sed vitae vestibulum enim, et pharetra magna
+									</p>
+
+									<a href="blog-detail-01.html" class="f1-s-1 cl9 hov-cl10 trans-03">
+										Read More
+										<i class="m-l-2 fa fa-long-arrow-alt-right"></i>
+									</a>
+								</div>
+							</div>
+
+							<!-- Item post -->
+							<div class="flex-wr-sb-s p-t-40 p-b-15 how-bor2">
+								<a href="blog-detail-01.html" class="size-w-8 wrap-pic-w hov1 trans-03 w-full-sr575 m-b-25">
+									<img src="images/post-47.jpg" alt="IMG">
+								</a>
+
+								<div class="size-w-9 w-full-sr575 m-b-25">
+									<h5 class="p-b-12">
+										<a href="blog-detail-01.html" class="f1-l-1 cl2 hov-cl10 trans-03 respon2">
+											American Bank lorem ipsum dolor sit amet
+										</a>
+									</h5>
+
+									<div class="cl8 p-b-18">
+										<a href="#" class="f1-s-4 cl8 hov-cl10 trans-03">
+											by John Alvarado
+										</a>
+
+										<span class="f1-s-3 m-rl-3">
+											-
+										</span>
+
+										<span class="f1-s-3">
+											Feb 18
+										</span>
+									</div>
+
+									<p class="f1-s-1 cl6 p-b-24">
+										Duis eu felis id tortor congue consequat. Sed vitae vestibulum enim, et pharetra magna
+									</p>
+
+									<a href="blog-detail-01.html" class="f1-s-1 cl9 hov-cl10 trans-03">
+										Read More
+										<i class="m-l-2 fa fa-long-arrow-alt-right"></i>
+									</a>
+								</div>
+							</div>
+
+							<!-- Item post -->
+							<div class="flex-wr-sb-s p-t-40 p-b-15 how-bor2">
+								<a href="blog-detail-01.html" class="size-w-8 wrap-pic-w hov1 trans-03 w-full-sr575 m-b-25">
+									<img src="images/post-48.jpg" alt="IMG">
+								</a>
+
+								<div class="size-w-9 w-full-sr575 m-b-25">
+									<h5 class="p-b-12">
+										<a href="blog-detail-01.html" class="f1-l-1 cl2 hov-cl10 trans-03 respon2">
+											Macbook New 12 lorem ipsum dolor sit amet
+										</a>
+									</h5>
+
+									<div class="cl8 p-b-18">
+										<a href="#" class="f1-s-4 cl8 hov-cl10 trans-03">
+											by John Alvarado
+										</a>
+
+										<span class="f1-s-3 m-rl-3">
+											-
+										</span>
+
+										<span class="f1-s-3">
+											Feb 18
+										</span>
+									</div>
+
+									<p class="f1-s-1 cl6 p-b-24">
+										Duis eu felis id tortor congue consequat. Sed vitae vestibulum enim, et pharetra magna
+									</p>
+
+									<a href="blog-detail-01.html" class="f1-s-1 cl9 hov-cl10 trans-03">
+										Read More
+										<i class="m-l-2 fa fa-long-arrow-alt-right"></i>
+									</a>
+								</div>
+							</div>
+
+							<!-- Item post -->
+							<div class="flex-wr-sb-s p-t-40 p-b-15 how-bor2">
+								<a href="blog-detail-01.html" class="size-w-8 wrap-pic-w hov1 trans-03 w-full-sr575 m-b-25">
+									<img src="images/post-49.jpg" alt="IMG">
+								</a>
+
+								<div class="size-w-9 w-full-sr575 m-b-25">
+									<h5 class="p-b-12">
+										<a href="blog-detail-01.html" class="f1-l-1 cl2 hov-cl10 trans-03 respon2">
+											You wish lorem ipsum dolor sit amet consectetur
+										</a>
+									</h5>
+
+									<div class="cl8 p-b-18">
+										<a href="#" class="f1-s-4 cl8 hov-cl10 trans-03">
+											by John Alvarado
+										</a>
+
+										<span class="f1-s-3 m-rl-3">
+											-
+										</span>
+
+										<span class="f1-s-3">
+											Feb 18
+										</span>
+									</div>
+
+									<p class="f1-s-1 cl6 p-b-24">
+										Duis eu felis id tortor congue consequat. Sed vitae vestibulum enim, et pharetra magna
+									</p>
+
+									<a href="blog-detail-01.html" class="f1-s-1 cl9 hov-cl10 trans-03">
+										Read More
+										<i class="m-l-2 fa fa-long-arrow-alt-right"></i>
+									</a>
 								</div>
 							</div>
 						</div>
-						<div class="widget mb-0">
-							<h3 class="news-title">
-								<span>Beauty Blog</span>
-							</h3>
-							<div class="post-slide">
-								<div class="item">
-									<div class="post-overlay-wrapper clearfix">
-										<div class="post-thumbnail">
-											<a href="single-post.html">
-												<img class="img-fluid" src="images/news/news-16.jpg" alt="post-thumbnail" />
-											</a>
-										</div>
-										<div class="post-content">
-											<a class="post-category white" href="post-category-2.html">Hair</a>
-											<h2 class="post-title">
-												<a href="single-post.html">On Beauty: Style and Fashion Blogger...</a>
-											</h2>
-											<div class="post-meta white">
-												<span class="posted-time">4 hours ago</span>
-												<span> by </span>
-												<span class="post-author">
-													<a href="author.html">Jammy Anderson</a>
-												</span>
-											</div>
-										</div>
-									</div>
 
-									<div class="post-overlay-wrapper clearfix mt-3">
-										<div class="post-thumbnail">
-											<a href="single-post.html">
-												<img class="img-fluid" src="images/news/news-18.jpg" alt="post-thumbnail" />
-											</a>
-										</div>
-										<div class="post-content">
-											<a class="post-category white" href="post-category-2.html">Eyes</a>
-											<h2 class="post-title">
-												<a href="single-post.html">The Best Eye Makeup Tutorials fo...</a>
-											</h2>
-											<div class="post-meta white">
-												<span class="posted-time">5 hours ago</span>
-												<span> by </span>
-												<span class="post-author">
-													<a href="author.html">Roberto Carlous</a>
-												</span>
-											</div>
-										</div>
-									</div>
-								</div>
+						<a href="#" class="flex-c-c size-a-13 bo-all-1 bocl11 f1-m-6 cl6 hov-btn1 trans-03">
+							Load More
+						</a>
+					</div>
+				</div>
 
-								<div class="item ">
-									<div class="post-overlay-wrapper clearfix">
-										<div class="post-thumbnail">
-											<a href="single-post.html">
-												<img class="img-fluid" src="images/news/news-17.jpg" alt="post-thumbnail" />
-											</a>
-										</div>
-
-										<div class="post-content">
-											<a class="post-category white" href="post-category-2.html">Nail</a>
-											<h2 class="post-title">
-												<a href="single-post.html">5 Best Essie Polishes for Winter...</a>
-											</h2>
-											<div class="post-meta white">
-												<span class="posted-time">10 hours ago</span>
-												<span> by </span>
-												<span class="post-author">
-													<a href="author.html">Jamalick Jack</a>
-												</span>
-											</div>
-										</div>
-									</div>
-									<div class="post-overlay-wrapper mt-3 clearfix">
-										<div class="post-thumbnail">
-											<a href="single-post.html">
-												<img class="img-fluid" src="images/news/news-19.jpg" alt="post-thumbnail" />
-											</a>
-										</div>
-										<div class="post-content">
-											<a class="post-category white" href="post-category-2.html">Lips</a>
-											<h2 class="post-title">
-												<a href="single-post.html">This Red Hot Metallic Lip Tutori...</a>
-											</h2>
-											<div class="post-meta white">
-												<span class="posted-time">5 hours ago</span>
-												<span> by </span>
-												<span class="post-author">
-													<a href="author.html">Jerin Khan</a>
-												</span>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
+				<div class="col-md-10 col-lg-4 p-b-50">
+					<div class="p-l-10 p-rl-0-sr991">
+						<!-- Banner -->
+						<div class="flex-c-s">
+							<a href="#">
+								<img class="max-w-full" src="images/banner-03.jpg" alt="IMG">
+							</a>
 						</div>
 					</div>
 				</div>
@@ -508,422 +601,202 @@
 		</div>
 	</section>
 
-	<section class="news-style-four bg-light section-padding">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-4 col-md-6">
-					<div class="block">
-						<h3 class="news-title">
-							<span>Tour</span>
-						</h3>
-						<div class="post-overlay-wrapper clearfix">
-							<div class="post-thumbnail">
-								<img class="img-fluid" src="images/news/news-13.jpg" alt="post-thumbnail" />
-							</div>
-
-							<div class="post-content">
-								<h2 class="post-title ">
-									<a href="single-post.html">An Asteroid Is Passing Earth Today: Here's How to</a>
-								</h2>
-								<div class="post-meta white">
-									<span class="posted-time">2 hours ago</span>
-									<span class="post-author">by
-										<a href="author.html">Rock Madveen</a>
-									</span>
-									<span class="pull-right">
-										<i class="fa fa-comments"></i>
-										<a href="single-post.html#comments">05</a>
-									</span>
-								</div>
-							</div>
+	<!-- Footer -->
+	<footer>
+		<div class="bg2 p-t-40 p-b-25">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-4 p-b-20">
+						<div class="size-h-3 flex-s-c">
+							<a href="index.html">
+								<img class="max-s-full" src="images/icons/logo-02.png" alt="LOGO">
+							</a>
 						</div>
 
-						<div class="post-list-block">
-							<div class="post-block-wrapper post-float clearfix">
-								<div class="post-thumbnail">
-									<img class="img-fluid" src="images/news/news-11.jpg" alt="post-thumbnail" />
+						<div>
+							<p class="f1-s-1 cl11 p-b-16">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tempor magna eget elit efficitur, at accumsan sem placerat. Nulla tellus libero, mattis nec molestie at, facilisis ut turpis. Vestibulum dolor metus, tincidunt eget odio
+							</p>
 
-								</div>
+							<p class="f1-s-1 cl11 p-b-16">
+								Any questions? Call us on (+1) 96 716 6879
+							</p>
 
-								<div class="post-content">
-									<h2 class="post-title title-sm">
-										<a href="single-post.html">Snow and Freezing Rain in Paris Forces the</a>
-									</h2>
-									<div class="post-meta">
-										<span class="posted-time">3 hours ago</span>
-									</div>
-								</div>
-							</div>
+							<div class="p-t-15">
+								<a href="#" class="fs-18 cl11 hov-cl10 trans-03 m-r-8">
+									<span class="fab fa-facebook-f"></span>
+								</a>
 
-							<div class="post-block-wrapper post-float clearfix">
-								<div class="post-thumbnail">
-									<img class="img-fluid" src="images/news/news-04.jpg" alt="post-thumbnail" />
-								</div>
-								<div class="post-content">
-									<h2 class="post-title title-sm">
-										<a href="single-post.html">Your social media apps want to help.</a>
-									</h2>
-									<div class="post-meta">
-										<span class="posted-time">8 hours ago</span>
-									</div>
-								</div>
-							</div>
+								<a href="#" class="fs-18 cl11 hov-cl10 trans-03 m-r-8">
+									<span class="fab fa-twitter"></span>
+								</a>
 
-							<div class="post-block-wrapper post-float clearfix">
-								<div class="post-thumbnail">
-									<img class="img-fluid" src="images/news/news-12.jpg" alt="post-thumbnail" />
-								</div>
+								<a href="#" class="fs-18 cl11 hov-cl10 trans-03 m-r-8">
+									<span class="fab fa-pinterest-p"></span>
+								</a>
 
-								<div class="post-content">
-									<h2 class="post-title title-sm">
-										<a href="single-post.html">Today Is the Day Most People Quit Their New Year's</a>
-									</h2>
-									<div class="post-meta">
-										<span class="posted-time">9 hours ago</span>
-									</div>
-								</div>
+								<a href="#" class="fs-18 cl11 hov-cl10 trans-03 m-r-8">
+									<span class="fab fa-vimeo-v"></span>
+								</a>
+
+								<a href="#" class="fs-18 cl11 hov-cl10 trans-03 m-r-8">
+									<span class="fab fa-youtube"></span>
+								</a>
 							</div>
 						</div>
 					</div>
-				</div>
-				<div class="col-lg-4 col-md-6">
-					<div class="block">
-						<h3 class="news-title">
-							<span>Game</span>
-						</h3>
-						<div class="post-overlay-wrapper clearfix">
-							<div class="post-thumbnail">
-								<img class="img-fluid" src="images/news/news-08.jpg" alt="post-thumbnail" />
-							</div>
 
-							<div class="post-content">
-								<h2 class="post-title">
-									<a href="single-post.html">Call Of Duty: Black Ops 4 Releasing</a>
-								</h2>
-								<div class="post-meta white">
-									<span class="posted-time">3 hours ago</span>
-									<span class="post-author">by
-										<a href="author.html">Arya Stark</a>
-									</span>
-									<span class="pull-right">
-										<i class="fa fa-comments"></i>
-										<a href="single-post.html#comments">10</a>
-									</span>
-								</div>
-							</div>
+					<div class="col-sm-6 col-lg-4 p-b-20">
+						<div class="size-h-3 flex-s-c">
+							<h5 class="f1-m-7 cl0">
+								Popular Posts
+							</h5>
 						</div>
 
-						<div class="post-list-block">
-							<div class="post-block-wrapper post-float clearfix">
-								<div class="post-thumbnail">
-									<img class="img-fluid" src="images/news/news-03.jpg" alt="post-thumbnail" />
-								</div>
+						<ul>
+							<li class="flex-wr-sb-s p-b-20">
+								<a href="#" class="size-w-4 wrap-pic-w hov1 trans-03">
+									<img src="images/popular-post-01.jpg" alt="IMG">
+								</a>
 
-								<div class="post-content">
-									<h2 class="post-title title-sm">
-										<a href="single-post.html">Apple HomePod review: locked in</a>
-									</h2>
-									<div class="post-meta">
-										<span class="posted-time">4 hours ago</span>
-									</div>
-								</div>
-							</div>
+								<div class="size-w-5">
+									<h6 class="p-b-5">
+										<a href="#" class="f1-s-5 cl11 hov-cl10 trans-03">
+											Donec metus orci, malesuada et lectus vitae
+										</a>
+									</h6>
 
-							<div class="post-block-wrapper post-float clearfix">
-								<div class="post-thumbnail">
-									<img class="img-fluid" src="images/news/news-01.jpg" alt="post-thumbnail" />
+									<span class="f1-s-3 cl6">
+										Feb 17
+									</span>
 								</div>
+							</li>
 
-								<div class="post-content">
-									<h2 class="post-title title-sm">
-										<a href="single-post.html">Ex-Googler warns coding bootcamps are lacking</a>
-									</h2>
-									<div class="post-meta">
-										<span class="posted-time">5 hours ago</span>
-									</div>
-								</div>
-							</div>
+							<li class="flex-wr-sb-s p-b-20">
+								<a href="#" class="size-w-4 wrap-pic-w hov1 trans-03">
+									<img src="images/popular-post-02.jpg" alt="IMG">
+								</a>
 
-							<div class="post-block-wrapper post-float clearfix">
-								<div class="post-thumbnail">
-									<img class="img-fluid" src="images/news/news-06.jpg" alt="post-thumbnail" />
-								</div>
+								<div class="size-w-5">
+									<h6 class="p-b-5">
+										<a href="#" class="f1-s-5 cl11 hov-cl10 trans-03">
+											Lorem ipsum dolor sit amet, consectetur
+										</a>
+									</h6>
 
-								<div class="post-content">
-									<h2 class="post-title title-sm">
-										<a href="single-post.html">PS4 Games Sale: All The PSN Deals</a>
-									</h2>
-									<div class="post-meta">
-										<span class="posted-time">12 hours ago</span>
-									</div>
+									<span class="f1-s-3 cl6">
+										Feb 16
+									</span>
 								</div>
-							</div>
-						</div>
+							</li>
+
+							<li class="flex-wr-sb-s p-b-20">
+								<a href="#" class="size-w-4 wrap-pic-w hov1 trans-03">
+									<img src="images/popular-post-03.jpg" alt="IMG">
+								</a>
+
+								<div class="size-w-5">
+									<h6 class="p-b-5">
+										<a href="#" class="f1-s-5 cl11 hov-cl10 trans-03">
+											Suspendisse dictum enim quis imperdiet auctor
+										</a>
+									</h6>
+
+									<span class="f1-s-3 cl6">
+										Feb 15
+									</span>
+								</div>
+							</li>
+						</ul>
 					</div>
-				</div>
-				<div class="col-lg-4 col-md-6">
-					<div class="block">
-						<h3 class="news-title">
-							<span>Health</span>
-						</h3>
-						<div class="post-overlay-wrapper clearfix">
-							<div class="post-thumbnail">
-								<img class="img-fluid" src="images/news/news-05.jpg" alt="post-thumbnail" />
-							</div>
 
-							<div class="post-content">
-								<h2 class="post-title">
-									<a href="single-post.html">Here's How To Get Free Pizza On</a>
-								</h2>
-								<div class="post-meta white">
-									<span class="posted-time">an hour ago</span>
-									<span class="post-author">by
-										<a href="author.html">Mad King</a>
-									</span>
-									<span class="pull-right">
-										<i class="fa fa-comments"></i>
-										<a href="single-post.html#comments">30</a>
-									</span>
-								</div>
-							</div>
+					<div class="col-sm-6 col-lg-4 p-b-20">
+						<div class="size-h-3 flex-s-c">
+							<h5 class="f1-m-7 cl0">
+								Category
+							</h5>
 						</div>
 
-						<div class="post-list-block">
-							<div class="post-block-wrapper post-float clearfix">
-								<div class="post-thumbnail">
-									<img class="img-fluid" src="images/news/news-10.jpg" alt="post-thumbnail" />
-								</div>
-
-								<div class="post-content">
-									<h2 class="post-title title-sm">
-										<a href="single-post.html">Free Two-Hour Delivery From Whole Foods</a>
-									</h2>
-									<div class="post-meta">
-										<span class="posted-time">2 hours ago</span>
-									</div>
-								</div>
-							</div>
-
-							<div class="post-block-wrapper post-float clearfix">
-								<div class="post-thumbnail">
-									<img class="img-fluid" src="images/news/news-07.jpg" alt="post-thumbnail" />
-								</div>
-
-								<div class="post-content">
-									<h2 class="post-title title-sm">
-										<a href="single-post.html">Your social media apps want to help</a>
-									</h2>
-									<div class="post-meta">
-										<span class="posted-time">4 hours ago</span>
-									</div>
-								</div>
-							</div>
-
-							<div class="post-block-wrapper post-float clearfix">
-								<div class="post-thumbnail">
-									<img class="img-fluid" src="images/news/news-14.jpg" alt="post-thumbnail" />
-								</div>
-
-								<div class="post-content">
-									<h2 class="post-title title-sm">
-										<a href="single-post.html">Snow and Freezing Rain in Paris Forces the</a>
-									</h2>
-									<div class="post-meta">
-										<span class="posted-time">9 hours ago</span>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-
-	<section class="section-padding">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-8 col-md-12 col-sm-12 col-xs-12">
-					<div class="all-news-block">
-						<h3 class="news-title">
-							<span>Latest Articles</span>
-						</h3>
-						<div class="all-news">
-							<div class="row">
-								<div class="col-lg-6 col-md-6">
-									<div class="post-block-wrapper post-float-half clearfix">
-										<div class="post-thumbnail">
-											<a href="single-post.html">
-												<img class="img-fluid" src="images/news/news-01.jpg" alt="post-thumbnail" />
-											</a>
-										</div>
-										<div class="post-content">
-											<a class="post-category" href="post-category-2.html">Google</a>
-											<h2 class="post-title mt-3">
-												<a href="single-post.html">Ex-Googler warns coding bootcamps are lacking</a>
-											</h2>
-											<div class="post-meta">
-												<span class="posted-time">an hour ago</span>
-												<span class="post-author">by
-													<a href="author.html">John Snow</a>
-												</span>
-											</div>
-											<p>
-												Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel eaque, aliquid accusamus
-												soluta!...
-											</p>
-										</div>
-									</div>
-								</div>
-
-								<div class="col-lg-6 col-md-6">
-									<div class="post-block-wrapper post-float-half clearfix">
-										<div class="post-thumbnail">
-											<a href="single-post.html">
-												<img class="img-fluid" src="images/news/news-12.jpg" alt="post-thumbnail" />
-											</a>
-										</div>
-										<div class="post-content">
-											<a class="post-category" href="post-category-2.html">Health</a>
-											<h2 class="post-title mt-3">
-												<a href="single-post.html">Today Is the Day Most People Quit Their New Year's Party</a>
-											</h2>
-											<div class="post-meta">
-												<span class="posted-time">4 hours ago</span>
-												<span class="post-author">by
-													<a href="author.html">Rimmon Ronnick</a>
-												</span>
-											</div>
-											<p>
-												Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis blanditiis hic
-												cumque excepturi...
-											</p>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<nav aria-label="pagination-wrapper" class="pagination-wrapper">
-						<ul class="pagination justify-content-center">
-							<li class="page-item active">
-								<a class="page-link" href="#" aria-label="Previous">
-									<span aria-hidden="true"><i class="fa fa-angle-double-left mr-2"></i></span>
-									<span class="">Previous</span>
+						<ul class="m-t--12">
+							<li class="how-bor1 p-rl-5 p-tb-10">
+								<a href="#" class="f1-s-5 cl11 hov-cl10 trans-03 p-tb-8">
+									Fashion (22)
 								</a>
 							</li>
-							<li class="page-item"><a class="page-link" href="#">1</a></li>
-							<li class="page-item"><a class="page-link" href="#">2</a></li>
-							<li class="page-item"><a class="page-link" href="#">3</a></li>
-							<li class="page-item">
-								<a class="page-link" href="#" aria-label="Next">
-									<span class="">Next</span>
-									<span aria-hidden="true"><i class="fa fa-angle-double-right ml-2"></i></span>
+
+							<li class="how-bor1 p-rl-5 p-tb-10">
+								<a href="#" class="f1-s-5 cl11 hov-cl10 trans-03 p-tb-8">
+									Technology (29)
+								</a>
+							</li>
+
+							<li class="how-bor1 p-rl-5 p-tb-10">
+								<a href="#" class="f1-s-5 cl11 hov-cl10 trans-03 p-tb-8">
+									Street Style (15)
+								</a>
+							</li>
+
+							<li class="how-bor1 p-rl-5 p-tb-10">
+								<a href="#" class="f1-s-5 cl11 hov-cl10 trans-03 p-tb-8">
+									Life Style (28)
+								</a>
+							</li>
+
+							<li class="how-bor1 p-rl-5 p-tb-10">
+								<a href="#" class="f1-s-5 cl11 hov-cl10 trans-03 p-tb-8">
+									DIY & Crafts (16)
 								</a>
 							</li>
 						</ul>
-					</nav>
-				</div>
-				<div class="col-lg-4 col-md-8 col-sm-12 col-xs-12">
-					<div class="sidebar sidebar-right">
-						<div class="widget">
-							<h3 class="news-title">
-								<span>Top Authors</span>
-							</h3>
-							<div class="post-list-block">
-								<div class=" review-post-list">
-									<div class="top-author">
-										<img src="images/news/author-01.jpg" alt="author-thumb">
-										<div class="info">
-											<h4 class="name"><a href="author.html">Jack Rockshow</a></h4>
-											<ul class="list-unstyled">
-												<li>37 Posts</li>
-											</ul>
-										</div>
-									</div>
-									<div class="top-author">
-										<img src="images/news/author-02.jpg" alt="author-thumb">
-										<div class="info">
-											<h4 class="name"><a href="author.html">Lint Handson</a></h4>
-											<ul class="list-unstyled">
-												<li>28 Posts</li>
-											</ul>
-										</div>
-									</div>
-									<div class="top-author">
-										<img src="images/news/author-03.jpg" alt="author-thumb">
-										<div class="info">
-											<h4 class="name"><a href="author.html">Ronny Robeen</a></h4>
-											<ul class="list-unstyled">
-												<li>19 Posts</li>
-											</ul>
-										</div>
-									</div>
-									<div class="top-author">
-										<img src="images/news/author-02.jpg" alt="author-thumb">
-										<div class="info">
-											<h4 class="name"><a href="author.html">Handson</a></h4>
-											<ul class="list-unstyled">
-												<li>18 Posts</li>
-											</ul>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-	</section>
 
-	<div class="py-40"></div>
+		<div class="bg11">
+			<div class="container size-h-4 flex-c-c p-tb-15">
+				<span class="f1-s-1 cl0 txt-center">
+					Copyright © 2018
 
-	<footer class="footer footer-main ">
-		<div class="container">
-			<div class="row justify-content-center">
-				<div class="col-md-8 col-sm-12 col-lg-6 text-center">
-					<a href="index.html"><img src="images/logos/footer-logo.png" alt="" class="img-fluid"></a>
-					<p class="mt-4">We perfectly balances the simplicity of a clean, eye-catching blog with the flexibility to create unique page layouts.</p>
-
-					<ul class="list-inline footer-social">
-						<li class="li list-inline-item"><a href="https://www.facebook.com/themefisher"><i class="fa fa-facebook"></i></a></li>
-						<li class="li list-inline-item"><a href="https://twitter.com/themefisher"><i class="fa fa-twitter"></i></a></li>
-						<li class="li list-inline-item"><a href="#"><i class="fa fa-linkedin"></i></a></li>
-						<li class="li list-inline-item"><a href="#"><i class="fa fa-pinterest"></i></a></li>
-						<li class="li list-inline-item"><a href="#"><i class="fa fa-rss"></i></a></li>
-						<li class="li list-inline-item"><a href="#"><i class="fa fa-youtube"></i></a></li>
-					</ul>
-
-					<div class="copyright-text text-center">
-						<p class="mb-0">© All Copyright Reserved to - <a href="https://themefisher.com/" target="_blank">Themefisher</a></p>
-					</div>
-				</div>
-
-				<div class="scroll-to-top">
-					<button class="btn btn-primary" title="Back to Top">
-						<i class="fa fa-angle-up"></i>
-					</button>
-				</div>
+					<a href="#" class="f1-s-1 cl10 hov-link1"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+						Copyright &copy;<script>
+							document.write(new Date().getFullYear());
+						</script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+						<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+				</span>
 			</div>
 		</div>
 	</footer>
 
+	<!-- Back to top -->
+	<div class="btn-back-to-top" id="myBtn">
+		<span class="symbol-btn-back-to-top">
+			<span class="fas fa-angle-up"></span>
+		</span>
+	</div>
 
-	<!-- THEME JAVASCRIPT FILES
-================================================== -->
-	<!-- initialize jQuery Library -->
-	<script src="<?= base_url('assets/newsbit/theme/') ?>plugins/jquery/jquery.js"></script>
-	<!-- Bootstrap jQuery -->
-	<script src="<?= base_url('assets/newsbit/theme/') ?>plugins/bootstrap/js/bootstrap.min.js"></script>
-	<!-- Slick Slider -->
-	<script src="<?= base_url('assets/newsbit/theme/') ?>plugins/slick-carousel/slick.min.js"></script>
-	<!-- Google Map -->
-	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCC72vZw-6tGqFyRhhg5CkF2fqfILn2Tsw"></script>
-	<script src="<?= base_url('assets/newsbit/theme/') ?>plugins/google-map/gmap.js"></script>
-	<!-- main js -->
-	<script src="<?= base_url('assets/newsbit/theme/') ?>js/custom.js"></script>
+	<!-- Modal Video 01-->
+	<div class="modal fade" id="modal-video-01" tabindex="-1" role="dialog" aria-hidden="true">
+		<div class="modal-dialog" role="document" data-dismiss="modal">
+			<div class="close-mo-video-01 trans-0-4" data-dismiss="modal" aria-label="Close">&times;</div>
+
+			<div class="wrap-video-mo-01">
+				<div class="video-mo-01">
+					<iframe src="https://www.youtube.com/embed/wJnBTPUQS5A?rel=0" allowfullscreen></iframe>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!--===============================================================================================-->
+	<script src="<?= base_url('assets/magnews/') ?>vendor/jquery/jquery-3.2.1.min.js"></script>
+	<!--===============================================================================================-->
+	<script src="<?= base_url('assets/magnews/') ?>vendor/animsition/js/animsition.min.js"></script>
+	<!--===============================================================================================-->
+	<script src="<?= base_url('assets/magnews/') ?>vendor/bootstrap/js/popper.js"></script>
+	<script src="<?= base_url('assets/magnews/') ?>vendor/bootstrap/js/bootstrap.min.js"></script>
+	<!--===============================================================================================-->
+	<script src="<?= base_url('assets/magnews/') ?>js/main.js"></script>
 
 </body>
 
