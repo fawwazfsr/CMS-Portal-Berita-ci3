@@ -22,13 +22,13 @@ class Konten extends CI_Controller
         $this->db->order_by('tanggal', 'DESC');
         $konten = $this->db->get()->result_array();
 
-
         $data = array(
             'judul_halaman' => 'Konten',
             'kategori'      => $kategori,
             'konten'        => $konten
         );
         $this->template->load('template_admin', 'admin/konten', $data);
+
     }
     public function simpan()
     {
@@ -79,7 +79,6 @@ class Konten extends CI_Controller
                                 <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                             </div>
 		');
-        redirect('admin/konten');
         $username = $this->session->userdata('username');
         $history = array(
             'username' => $username,
@@ -87,6 +86,7 @@ class Konten extends CI_Controller
             'aktivitas' => 'Menambah Berita'
         );
         $this->db->insert('history', $history);
+        redirect('admin/konten');
     }
     public function hapus_data($id)
     {
@@ -100,7 +100,6 @@ class Konten extends CI_Controller
 		<i class="fa fa-exclamation-circle me-2"></i>Konten Berhasil dihapus
 		<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
 	</div>');
-        redirect('admin/konten');
         $username = $this->session->userdata('username');
         $history = array(
             'username' => $username,
@@ -108,6 +107,7 @@ class Konten extends CI_Controller
             'aktivitas' => 'Menghapus Berita'
         );
         $this->db->insert('history', $history);
+        redirect('admin/konten');
     }
     public function update()
     {
@@ -147,7 +147,6 @@ class Konten extends CI_Controller
                                 <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                             </div>
 		');
-        redirect('admin/konten');
         $username = $this->session->userdata('username');
         $history = array(
             'username' => $username,
@@ -155,5 +154,6 @@ class Konten extends CI_Controller
             'aktivitas' => 'Mengedit Berita'
         );
         $this->db->insert('history', $history);
+        redirect('admin/konten');
     }
 }

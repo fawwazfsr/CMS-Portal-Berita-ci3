@@ -17,9 +17,7 @@
 
     <!-- Google Fonts -->
     <link href="https://fonts.gstatic.com" rel="preconnect">
-    <link
-        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
     <!-- Vendor CSS Files -->
     <link href="<?= base_url('assets/NiceAdmin/') ?>assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -30,6 +28,9 @@
     <link href="<?= base_url('assets/NiceAdmin/') ?>assets/vendor/remixicon/remixicon.css" rel="stylesheet">
     <link href="<?= base_url('assets/NiceAdmin/') ?>assets/vendor/simple-datatables/style.css" rel="stylesheet">
     <link href="<?= base_url('assets/NiceAdmin/') ?>assets/css/style.css" rel="stylesheet">
+
+    <link href="https://cdn.datatables.net/1.13.7/css/dataTables.bootstrap5.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
 </head>
 
 <body>
@@ -40,7 +41,7 @@
         <div class="d-flex align-items-center justify-content-between">
             <a href="<?= base_url() ?>" target="_blank" class="logo d-flex align-items-center">
                 <img src="<?= base_url('assets/NiceAdmin/') ?>assets/img/logo.png" alt="">
-                <span class="d-none d-lg-block">NiceAdmin</span>
+                <span class="d-none d-lg-block">Mak News</span>
             </a>
             <i class="bi bi-list toggle-sidebar-btn"></i>
         </div><!-- End Logo -->
@@ -58,8 +59,7 @@
                 <li class="nav-item dropdown pe-3">
 
                     <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
-                        <img src="<?= base_url('assets/NiceAdmin/') ?>assets/img/profile-img.jpg" alt="Profile"
-                            class="rounded-circle">
+                        <img src="<?= base_url('assets/NiceAdmin/') ?>assets/img/profile-img.jpg" alt="Profile" class="rounded-circle">
                         <span class="d-none d-md-block dropdown-toggle ps-2">
                             <?= $this->session->userdata('nama') ?>
                         </span>
@@ -130,65 +130,57 @@
             <?php $menu = $this->uri->segment(2); ?>
             <li class="nav-heading">Home</li>
             <li class="nav-item <?php if ($menu == 'home') {
-                echo "active";
-            } ?>">
+                                    echo "active";
+                                } ?>">
                 <a class="nav-link collapsed" href="<?= base_url('admin/home') ?>">
                     <i class="bi bi-grid"></i>
                     <span>Dashboard</span>
                 </a>
             </li>
             <li class="nav-heading">Contents Pages</li>
-            <li class="nav-item <?php if ($menu == 'caraousel') {
-                echo "active";
-            } ?>">
-                <a class="nav-link collapsed" href="<?= base_url('admin/caraousel') ?>">
-                    <i class="bi bi-menu-button-wide"></i>
-                    <span>Carousel</span>
-                </a>
-            </li>
             <li class="nav-item <?php if ($menu == 'kategori') {
-                echo "active";
-            } ?>">
+                                    echo "active";
+                                } ?>">
                 <a class="nav-link collapsed" href="<?= base_url('admin/kategori') ?>">
                     <i class="bi bi-layout-text-window-reverse"></i>
-                    <span>Kategori Konten</span>
+                    <span>Kategori Berita</span>
                 </a>
             </li>
             <li class="nav-item <?php if ($menu == 'konten') {
-                echo "active";
-            } ?>">
+                                    echo "active";
+                                } ?>">
                 <a class="nav-link collapsed" href="<?= base_url('admin/konten') ?>">
                     <i class="bi bi-bar-chart"></i>
-                    <span>Konten</span>
+                    <span>Berita</span>
                 </a>
             </li>
             <li class="nav-item <?php if ($menu == 'konfigurasi') {
-                    echo "active";
-                } ?>">
-                    <a class="nav-link collapsed" href="<?= base_url('admin/konfigurasi') ?>">
-                        <i class="bi bi-card-list"></i>
-                        <span>Konfigurasi</span>
-                    </a>
-                </li>
+                                    echo "active";
+                                } ?>">
+                <a class="nav-link collapsed" href="<?= base_url('admin/konfigurasi') ?>">
+                    <i class="bi bi-card-list"></i>
+                    <span>Konfigurasi</span>
+                </a>
+            </li>
             <?php if ($this->session->userdata('level') == 'admin') { ?>
                 <li class="nav-heading">User Setting</li>
                 <li class="nav-item <?php if ($menu == 'user') {
-                    echo "active";
-                } ?>">
-                    <a class="nav-link collapsed" href="<?= base_url('admin/user') ?>">
+                                        echo "active";
+                                    } ?>">
+                    <a class="nav-link collapsed-active" href="<?= base_url('admin/user') ?>">
                         <i class="bi bi-person"></i>
                         <span>User</span>
                     </a>
                 </li>
                 <li class="nav-item <?php if ($menu == 'history') {
-                    echo "active";
-                } ?>">
+                                        echo "active";
+                                    } ?>">
                     <a class="nav-link collapsed" href="<?= base_url('admin/history') ?>">
                         <i class="bi bi-search"></i>
                         <span>Activity Log</span>
                     </a>
                 </li>
-               
+
             <?php } ?>
 
 
@@ -209,19 +201,18 @@
     <!-- ======= Footer ======= -->
     <footer id="footer" class="footer">
         <div class="copyright">
-            &copy; Copyright <strong><span>NiceAdmin</span></strong>. All Rights Reserved
+            &copy; Copyright <strong><span>Mak News</span></strong>. All Rights Reserved
         </div>
         <div class="credits">
             <!-- All the links in the footer should remain intact. -->
             <!-- You can delete the links only if you purchased the pro version. -->
             <!-- Licensing information: https://bootstrapmade.com/license/ -->
             <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/nice-admin-bootstrap-admin-html-template/ -->
-            Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+            Designed by <a href="https://bootstrapmade.com/">Mak News</a>
         </div>
     </footer><!-- End Footer -->
 
-    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
-            class="bi bi-arrow-up-short"></i></a>
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
     <!-- Vendor JS Files -->
     <script src="<?= base_url('assets/NiceAdmin/') ?>assets/vendor/apexcharts/apexcharts.min.js"></script>
@@ -235,6 +226,11 @@
 
     <!-- Template Main JS File -->
     <script src="<?= base_url('assets/NiceAdmin/') ?>assets/js/main.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <script src="https://cdn.datatables.net/1.13.7/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.13.7/js/dataTables.bootstrap5.min.js"></script>
+    <script>new DataTable('#example');</script>
 
 </body>
 

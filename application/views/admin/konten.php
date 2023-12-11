@@ -27,7 +27,7 @@
                                         <label for="inputText" class="col-sm-12 col-form-label">Kategori</label>
                                         <div class="col-sm-12">
                                             <select name="id_kategori" class="form-control">
-                                                <?php $no = 1;
+                                                <?php 
                                                 foreach ($kategori as $aa) { ?>
                                                     <option value="<?= $aa['id_kategori'] ?>"><?= $aa['nama_kategori'] ?></option>
                                                 <?php }  ?>
@@ -61,7 +61,7 @@
         <div id="myalert">
             <?= $this->session->flashdata('alert', true) ?>
         </div>
-        <table class="table table-hover">
+        <table id="example" class="table table-striped" style="width:100%">
             <thead>
                 <tr>
                     <th scope="col">No</th>
@@ -117,7 +117,7 @@
                                             <div class="modal-body">
                                                 <div class="card-body">
                                                     <form action="<?= base_url('admin/konten/update') ?>" method="post" enctype="multipart/form-data">
-                                                    <input type="hidden" name="nama_foto" value="<?= $aa['foto'] ?>">
+                                                        <input type="hidden" name="nama_foto" value="<?= $aa['foto'] ?>">
                                                         <div class="row mb-3">
                                                             <label for="inputText" class="col-sm-12 col-form-label">Judul</label>
                                                             <div class="col-sm-12">
@@ -128,11 +128,11 @@
                                                             <label for="inputText" class="col-sm-12 col-form-label">Kategori</label>
                                                             <div class="col-sm-12">
                                                                 <select name="id_kategori" class="form-control">
-                                                                    <?php $no = 1;
+                                                                    <?php 
                                                                     foreach ($kategori as $uu) { ?>
-                                                                        <option
-                                                                        <?php if($uu['id_kategori']==$aa['id_kategori']){ echo"selected";} ?>
-                                                                        value="<?= $uu['id_kategori'] ?>"><?= $uu['nama_kategori'] ?></option>
+                                                                        <option <?php if ($uu['id_kategori'] == $aa['id_kategori']) {
+                                                                                    echo "selected";
+                                                                                } ?> value="<?= $uu['id_kategori'] ?>"><?= $uu['nama_kategori'] ?></option>
                                                                     <?php } ?>
                                                                 </select>
                                                             </div>
@@ -169,4 +169,8 @@
     </div>
 </div>
 <script src="assets/tinymce/tinymce/js/tinymce/tinymce.min.js"></script>
-<script>tinymce.init({ selector:'textarea' });</script>
+<script>
+    tinymce.init({
+        selector: 'textarea'
+    });
+</script>

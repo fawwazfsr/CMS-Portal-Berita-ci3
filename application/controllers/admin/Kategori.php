@@ -81,7 +81,6 @@ class Kategori extends CI_Controller
 		<i class="fa fa-exclamation-circle me-2"></i>Kategori Berhasil diperbarui
 		<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
 	</div>');
-        redirect('admin/kategori');
         $username = $this->session->userdata('username');
         $history = array(
             'username' => $username,
@@ -89,5 +88,6 @@ class Kategori extends CI_Controller
             'aktivitas' => 'Memperbarui Kategori'
         );
         $this->db->insert('history', $history);
+        redirect('admin/kategori');
     }
 }
